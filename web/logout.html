@@ -1,0 +1,870 @@
+<!doctype html> 
+<html> 
+<head> 
+<title>News Design - HTML/CSS Course - beginners to professional</title> 
+<meta charset="utf-8" /> 
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<style> 
+ body { 
+  margin:0; 
+  padding:0; 
+  width:100%; 
+  font-family:verdana, sans-serif, arial; 
+ } 
+  
+ a:link    {color:#464646; background-color:transparent; text-decoration:none} 
+ a:visited {color:#464646; background-color:transparent; text-decoration:none} 
+ a:hover   {color:#7d7e80; background-color:transparent; text-decoration:none} 
+ a:active  {color:#7d7e80; background-color:transparent; text-decoration:none} 
+  
+ #container { 
+  width:1200px; 
+  height:auto; 
+  box-align:center; 
+   
+  margin:0; 
+  margin-left: auto; 
+      margin-right: auto; 
+ } 
+ 
+ .topbar { 
+  width:100%; 
+  height:5px; 
+  background-color:#eaeaea; 
+  float:left; 
+  margin-top:10px; 
+ } 
+  
+ .topnavbar { 
+  float:left; 
+ } 
+  
+ .navbar { 
+  float:left; 
+ } 
+ .navbar ul { 
+  margin:0; 
+  padding:0; 
+ } 
+  
+ .navbar li { 
+  list-style:none; 
+  font-size:.7em; 
+  color:#464646; 
+  float:left; 
+  margin-top:8px; 
+  padding:0 4px 0 4px; 
+  border-right:1px solid gray; 
+ } 
+  
+ .icons { 
+  float:left; 
+  margin:0; 
+  padding:0; 
+ } 
+  
+ .icons form { 
+  float:left; 
+  margin:0; 
+  padding:3px 4px 0 4px; 
+ } 
+  
+ .icons button { 
+  float:left; 
+  margin:0; 
+  margin-top:4px; 
+ } 
+  
+ .icons img { 
+  float:left; 
+  margin:0; 
+  padding:4px 0 0 10px; 
+ } 
+ 
+ .hline { 
+  width:100%; 
+  height:1px; 
+  background-color:#eaeaea; 
+  float:left; 
+  margin:0; 
+ } 
+  
+ #logobanner { 
+  width:100%; 
+  height:110px; 
+  background-color:none; 
+  margin:0; 
+  float:left; 
+ } 
+  
+ .logo { 
+  float:left; 
+  margin:0; 
+ } 
+  
+ .ad { 
+  float:left; 
+  margin:0; 
+  padding:12px 2px 0 325px; 
+ } 
+  
+ .menunavbar { 
+  float:left; 
+ } 
+  
+ .menunavbar ul { 
+  margin:0; 
+  padding:0; 
+ } 
+  
+ .menunavbar li { 
+  list-style:none; 
+  font-size:.6em; 
+  float:left; 
+  padding:2px 10px 0 10PX; 
+  font-weight:bold; 
+  border-right:1px solid gray; 
+  margin-top:5px; 
+ } 
+  
+ .slidetxt { 
+  width:100%; 
+  height:40px; 
+  background-color:#fef6f6; 
+  float:left; 
+  margin:0; 
+  margin-top:2px; 
+  font-size:1.1em; 
+  font-weight:bold; 
+  color:red; 
+  padding:10px 0 0 10px; 
+ } 
+ #newscontent { 
+  width:100%; 
+  height:auto; 
+  background-color:none; 
+  float:left; 
+  margin:0; 
+ } 
+  
+ #leftcontent { 
+  width:60%; 
+  height:auto; 
+  float:left; 
+  margin:0; 
+  border-right:1px solid #d6d5d5; 
+ } 
+  
+ .mainheading { 
+  margin:0; 
+  float:left; 
+  width:100%; 
+  height:auto; 
+  background-color:none; 
+ } 
+  
+ .heading { 
+  margin:0; 
+  float:left; 
+  width:100%; 
+  height:auto; 
+  background-color:none; 
+ } 
+  
+ .heading h2 { 
+  margin:0; 
+ } 
+  
+ .image { 
+  float:left; 
+  margin:0; 
+  width:100%; 
+  height:auto; 
+  background-color:none; 
+ } 
+  
+ .imageDetails { 
+  width:100%; 
+  height:auto; 
+  background-color:none; 
+  float:left; 
+  margin:0; 
+  clear:left; 
+ } 
+  
+ p { 
+  width:100%; 
+  margin:0; 
+  font-size:.8em; 
+  padding:3px 0 3px 3px; 
+  text-align:justify; 
+ } 
+  
+ .pstyle { 
+  width:100%; 
+  color:red;  
+  font-size:.7em; 
+  font-weight:bold; 
+  text-align:justify; 
+ } 
+  
+ .leftContentSplit { 
+  width:100%; 
+  height:auto; 
+  margin:0; 
+  float:left; 
+  border-right:1px solid #d6d5d5; 
+ } 
+  
+ .lcs1 { 
+  width:48%; 
+  height:auto; 
+  margin:0; 
+  float:left; 
+  border-right:1px solid #d6d5d5; 
+ } 
+  
+ .lcs2 { 
+  width:49%; 
+  height:auto; 
+  margin:0; 
+  float:left; 
+  margin-left:10px; 
+ } 
+  
+ .lcs1Thomas { 
+  width:90%; 
+  height:auto; 
+  margin:0; 
+  float:left; 
+ } 
+  
+ h5 { 
+  margin:0; 
+ } 
+  
+ .lcs2queen { 
+  width:90%; 
+  height:auto; 
+  margin:0; 
+  float:left; 
+  margin-bottom:5px; 
+  border-bottom:1px solid grey; 
+ } 
+  
+ .lcs1Police { 
+  float:left; 
+  margin:0; 
+  padding-bottom:6px; 
+  margin-right:35px; 
+  border-bottom:1px solid grey; 
+ } 
+  
+ .lcs1Police img { 
+  width:141px; 
+  height:94px; 
+  float:left; 
+  margin-top:5px; 
+  margin-right:5px; 
+ } 
+  
+ .lcs1PoliceTxt { 
+  margin:0; 
+  float:left; 
+  width:50%;; 
+ } 
+  
+ .line { 
+  float:left; 
+ } 
+  
+ .fiona { 
+  float:left; 
+  margin-right:10px; 
+ } 
+  
+ .lcs2Wenger { 
+  float:left; 
+  margin:0; 
+  padding-bottom:6px; 
+  margin-right:35px; 
+  border-bottom:1px solid grey; 
+ } 
+  
+ .lcs2Wenger img { 
+  width:141px; 
+  height:211px; 
+  float:left; 
+  margin-top:5px; 
+  margin-right:5px; 
+ } 
+  
+ .lcs2WengerTxt { 
+  margin:0; 
+  float:left; 
+  width:54%;; 
+ } 
+  
+ .wenger { 
+  float:left; 
+  margin-right:10px; 
+ } 
+  
+ .lcs2Man { 
+  float:left; 
+  margin:0; 
+  padding-bottom:6px; 
+  margin-right:35px; 
+  border-bottom:1px solid grey; 
+ } 
+  
+ .lcs2Man img { 
+  width:141px; 
+  height:94px; 
+  float:left; 
+  margin-top:5px; 
+  margin-right:5px; 
+ } 
+  
+ .lcs2ManTxt { 
+  margin:0; 
+  float:left; 
+  width:54%;; 
+ } 
+  
+ #rightcontent { 
+  width:38%; 
+  height:auto; 
+  float:left; 
+  margin:0; 
+  margin-left:20px; 
+ } 
+ .rcArsenal { 
+  float:left; 
+  margin:0; 
+  padding-bottom:6px; 
+  margin-right:60px; 
+  border-bottom:1px solid grey; 
+ } 
+  
+ .rcArsenal img { 
+  float:left; 
+  margin-top:10px; 
+  margin-right:10px; 
+ } 
+  
+ .rcArsenalTxt { 
+  margin:0; 
+  margin-top:5px; 
+  float:left; 
+  width:70%; 
+  font-weight:bold; 
+  font-size:.9em; 
+ } 
+  
+ .rcArsenal h4 { 
+  margin:0; 
+  padding:10px 0 10px 0; 
+ } 
+  
+ .sponsor { 
+  margin:0; 
+  width:87%; 
+  height:auto; 
+  float:left; 
+  margin-top:20px; 
+  border-top:2px solid grey; 
+  border-bottom:2px solid grey; 
+  border-left:1px solid grey; 
+  border-right:1px solid grey; 
+  padding:10px; 
+ } 
+  
+ .sponsorFeature { 
+  float:left; 
+  margin:0; 
+ } 
+  
+ .sFP { 
+  float:left; 
+  margin:0; 
+  font-weight:bold; 
+  font-size:.8em; 
+  margin-top:2px; 
+ } 
+  
+ .sFPArrows { 
+  margin:0; 
+  float:right; 
+  padding:2px 10px 10px 175px; 
+ } 
+  
+ .circle { 
+  float:left; 
+  margin:0; 
+  width:12px; 
+  height:12px; 
+  border-radius:6px; 
+  background-color:grey; 
+  margin-right:5px; 
+ } 
+  
+ .circle p { 
+  margin:0; 
+  padding:0; 
+  font-size:1.4em; 
+  text-align:center; 
+ } 
+  
+ .leftArrow { 
+ float:left; 
+ width: 0; 
+ height: 0; 
+ border-top: 3px solid transparent; 
+ border-right: 6px solid white; 
+ border-bottom: 3px solid transparent; 
+ margin:2px; 
+ } 
+  
+ .rightArrow { 
+ float:left; 
+ width: 0; 
+ height: 0; 
+ border-top: 3px solid transparent; 
+ border-left: 6px solid white; 
+ border-bottom: 3px solid transparent; 
+ margin:3px; 
+ } 
+  
+ table { 
+  font-size:.8em; 
+  text-decoration:underline; 
+  margin:5px; 
+  width:100%; 
+ } 
+  
+ td { 
+  padding-right:20px; 
+ } 
+  
+ .promoStory { 
+  margin:0; 
+  width:87%; 
+  height:auto; 
+  float:left; 
+  margin-top:20px; 
+  border-top:2px solid grey; 
+  border-bottom:2px solid grey; 
+  border-left:1px solid grey; 
+  border-right:1px solid grey; 
+  padding:10px; 
+ } 
+  
+ .pSP { 
+  float:left; 
+  margin:0; 
+  font-weight:bold; 
+  font-size:.6em; 
+  margin-top:2px; 
+  margin-bottom:5px; 
+ } 
+  
+ .pSTopics { 
+  flaot:left; 
+  margin:0; 
+ } 
+  
+ .pSTopic { 
+  float:left; 
+  margin:0; 
+  margin-top:10px; 
+  margin-right:10px; 
+  width:45%; 
+  font-size:.8em; 
+ } 
+  
+ .pSTopic h5 { 
+  width:90% 
+ } 
+  
+ .pSTopic p { 
+  width:90% 
+ } 
+  
+ .recommended { 
+  float:right; 
+  margin:0; 
+  margin-top:20px; 
+ } 
+  
+ .recommended img { 
+  float:right; 
+  width:75px; 
+ } 
+  
+ .recommended p { 
+  float:left; 
+  width:100px; 
+  font-size:.6em; 
+ } 
+  
+ .datelondon { 
+  float:left; 
+  margin:0; 
+  margin-top:20px; 
+  background-image:url(images/datelondon.jpg); 
+  width:300px; 
+  height:361px; 
+  position:relative; 
+   
+ } 
+  
+ .interestForm { 
+  width:100%; 
+  height:100px; 
+  background-color:grey; 
+  opacity:0.8; 
+  position:absolute; 
+  bottom:0;  
+  margin:0; 
+ } 
+  
+ .formLabel { 
+  margin:20px; 
+  font-size:.8em; 
+ } 
+  
+ .formGroup p { 
+  font-size:.7em; 
+  margin-left:20px; 
+ } 
+ #video { 
+  width:100%; 
+  height:410px; 
+  background-color:none; 
+  float:left; 
+  margin:0; 
+  margin-top:10px; 
+ } 
+  
+ .videoPlayer { 
+  margin:20px; 
+ } 
+  
+ .footer { 
+  margin:0; 
+  float:left; 
+  width:100%; 
+  height:30px; 
+  background-color:#dadada; 
+ } 
+  
+ .footer p { 
+  margin:0; 
+  padding:0; 
+  padding-top:5px; 
+  text-align:center; 
+ } 
+</style> 
+</head> 
+<body> 
+ <div id="container"> 
+  <div class="topbar"> 
+  </div> 
+   <div class="navbar"> 
+   <ul> 
+   <li><span id="time"></span></li> 
+   <li><a href="home.html">Home</a></li> 
+   <li><a href="webdevelopment.html">Web Development</a></li> 
+   <li><a href="corporate.html">Corporate</a></li> 
+   <li><a href="ecommerce.html">Ecommerce</a></li> 
+   <li><a href="news.html"><span  style="color:black; fontweight:bold;">News</span></a></li> 
+   <li><a href="tourismandtravel.html">Tourism &amp; Travel</a></li> 
+   <li style="border-right:none"><a href="contact.html">Contact Us</a></li> 
+   </ul> 
+   </div> 
+   <div class="icons"> 
+   <form><input type="text" placeholder="search" style="width:100px"></input></form> 
+   <button type="button" style="font-size:.8em">Go</button> 
+   <img src="images/newssicons.jpg" alt="social icons"> 
+   </div> 
+  <div class="hline"> 
+  </div> 
+  <!--- upto horizontal line end ----> 
+  <div id="logobanner"> 
+   <div class="logo"> 
+   <img src="images/newslogo.jpg" alt="Logo" > 
+   </div> 
+   <div class="ad"> 
+   <img src="images/newsapp.jpg" alt="Logo" > 
+   <img src="images/gogreen.jpg" alt="Logo" > 
+    </div> 
+   </div> 
+   <div class="hline"> 
+   </div> 
+  <!--- logo banner line end ----> 
+   <div class="menunavbar"> 
+    <ul> 
+    <li>HOME</li> 
+   <li>NEWS</li> 
+   <li>SPORTS</li> 
+   <li>GOING OUT</li> 
+   <li>LIFE STYLE</li> 
+   <li>FASHION &AMP; BEAUTY</li> 
+   <li>PROPERTY</li> 
+   <li>AUTOMOBILE</li> 
+   <li>JOBS</li> 
+   <li>TOURISM &AMP; TRAVEL</li> 
+   <li>ENTERTAINMENT</li> 
+   <li>TRAFFIC UPDATE</li> 
+   <li>VIDEO</li> 
+   <li style="border:none">CLASSIFIEDS</li> 
+    </ul> 
+`   </div> 
+   <div class="hline"> 
+   </div> 
+  <!--- menu navbar  end ---->  
+   <div class="slidetxt"> 
+   <marquee behavior="slide" direction="left" scrollamount="25" >Boxing Day snow predicted for parts of UK (and maybe even London)</marquee> 
+   </div> 
+   <div class="topbar"> 
+   </div> 
+  <!--- scrolling text  end ---->  
+   <div id="newscontent"> 
+    <div id="leftcontent"> 
+     <div class="mainheading"> 
+      <div class="heading"> 
+      <h2>Teenager stabbed to death 'outside off licence' in south east</h2> 
+      </div> 
+      <div class="image"> 
+       <img src="images/motorway.jpg" alt="image" > 
+      </div> 
+    </div> 
+     <div class="imageDetails"> 
+      <p>The teenager died at the street, police said.</p> 
+      <p class="pstyle">Murder probe launched after man stabbed to death in fight on the campus</p> 
+      <hr style="margin-right:60px; margin-left:5px;" /> 
+     </div> 
+     <div class="leftContentSplit"> 
+      <div class="lcs1"> 
+       <div class="lcs1Thomas"> 
+        <img src="images/thomascook.jpg" alt="Thomas Cook" > 
+        <h5>Passenger plane returns to Gatwick after part of aircraft falls to ground</h5> 
+        <p>The jet was on its way to Hurghada in Egypt when the aircraft's emergency slide plummeted 5.200ft to the groond next to the Kent and Sussex border 
+       </p> 
+        <p class="pstyle">Second pilot with in 3days arrested over alcohol levels</p> 
+       <hr style="margin-left:5px;" /> 
+      </div> 
+      <div class="lcs1Police"> 
+       <h5>Police hunt duo after women sprayed with 'noxious gas' in Soho</h5> 
+       <img src="images/policehunt.jpg" alt="Police Hunt" />      
+      </div> 
+       <div class="lcs1Police"> 
+        <h5>Virgin Galactic space tourism rocket crashes. killing one person and Injuring one other</h5> 
+        <img src="images/virgin.jpg" alt="Virgin" /> 
+        <div class="lcs1PoliceTxt"> 
+        <p>Witnesses said the aircraft exploded in flight after the ignition of the rocket and crashed in the California desert. 
+       </p> 
+        </div> 
+       </div> 
+       <div class="lcs1Police"> 
+        <h5>Woman sues Google over Street View image showing her breast</h5> 
+        <img src="images/women.jpg" alt="Women" /> 
+        <div class="lcs1PoliceTxt"> 
+        <p>A woman has sued Google after it published an Image of her with one of her breasts paltially exposed on its map service Street View. 
+       </p> 
+        </div> 
+        </div> 
+        <div class="lcs1Police"> 
+         <h5>Fiona Woolf resigns as head of inquiry into historic child sex abuse</h5> 
+         <img src="images/fiona.jpg" alt="Fiona" /> 
+         <div class="lcs1PoliceTxt"> 
+         <p>Representatives of child abuse victims had uryed Mrs Woolf to stand down after fresh revelations over her disclosure of links to former Home Secretary Lord Brittan. 
+       </p> 
+         </div> 
+         <div class="fiona"> 
+         <p class="pstyle">Lord Mayor Fiona Woolf faces pressure to quit over revelations of links to ex Home Secretary</p> 
+         </div> 
+        </div>      
+       </div> 
+       <div class="lcs2"> 
+        <div class="lcs2queen"> 
+         <img src="images/queen.jpg" alt="Queen" > 
+         <h5>Queen of Darkness: Suki Waterhouse steals the show with Byran Adams duet at UNICEF Halloween Ball</h5> 
+         <p><span style="color:red">GALLERY:</span> Suki Waterhouse was also showed her darker slde at the UNICEF Haloween Ball as she got up on stage in a black leotard and ripped tights for a duet WIth Bryan Adams. 
+       </p> 
+        </div> 
+        <div class="lcs2Wenger"> 
+         <img src="images/wenger.jpg" alt="Fiona" /> 
+         <div class="lcs2WengerTxt"> 
+         <h5>Wenger: It's unrealistic to think Arsenal can catch Chelsea in the Premier League title race</h5> 
+         <p><span style="color:red">FOOTBALL:</span> Arsense Wenger admits It would be foolish to think Arsenal can quickly overhaul Chelsea at the lop of the Premier League. 
+       </p> 
+         </div> 
+         <div class="wenger"> 
+         <p class="pstyle">Pep Guardiola to succeed Arsena Wenger? Arsenal will join race for former Balcelona boss when 
+Spaniard leaves Bayern Munich</p> 
+         </div> 
+        </div> 
+        <div class="lcs2Man"> 
+         <h5>Man 'killed by axe and knife in spit row with youths'</h5> 
+         <img src="images/mankilled.jpg" alt="Women" /> 
+         <div class="lcs2ManTxt"> 
+         <p>A handyman was stabbed 13 times by teenagers armed with an axe and a Imde aller he confronted them for spitting at his girlfriend, a court heard today. 
+       </p> 
+         </div> 
+        </div> 
+       </div> 
+      </div> 
+      <div id="video"> 
+        <video class="videoPlayer" width="658" height="370" controls> 
+       <source src="images/video.mp4" type="video/mp4"> 
+       <source src="movie.ogg" type="video/ogg"> 
+       Your browser does not support the video tag. 
+     </video> 
+       </div> 
+      </div> 
+      <div id="rightcontent"> 
+       <div class="rcArsenal"> 
+        <h4><span style="color:red">MOST READ</span> Commented Shared</h4> 
+        <img src="images/Arsenal.jpg" alt="Aesenal" /> 
+        <div class="rcArsenalTxt"> 
+        <p>Arsenal can win Premier League if they sign Sami Khedira in January, says former Gunner Perry Groves</p> 
+        </div> 
+       </div> 
+       <div class="rcArsenal"> 
+        <img src="images/mawomen.jpg" alt="Middle Aged Women" /> 
+        <div class="rcArsenalTxt"> 
+        <p>Middle aged women in latex gloves 'attacked London estate agent in her own home'</p> 
+        </div> 
+       </div> 
+       <div class="rcArsenal"> 
+        <img src="images/luniversity.jpg" alt="London University" /> 
+        <div class="rcArsenalTxt"> 
+        <p>London university rugby squad 'played booze-fuelled strip game on District Line Tube'</p> 
+        </div> 
+       </div> 
+     
+    <div class="rcArsenal"> 
+        <img src="images/encounter.jpg" alt="Encounter" /> 
+        <div class="rcArsenalTxt"> 
+        <p>Close encounter: the terrifying moment a huge Great While shark stalks panicked surfer</p> 
+        </div> 
+       </div> 
+       <div class="rcArsenal" style="border:none;"> 
+        <img src="images/hangout.jpg" alt="Hanging out" /> 
+        <div class="rcArsenalTxt"> 
+        <p>Hanging out: Miley Cyrus and Rihanna mingle with stars at amfAR Inspiration Gala</p> 
+        </div> 
+       </div> 
+       <div class="topbar" style="width:87%"> 
+       </div> 
+       <div class="sponsor"> 
+        <div class="sponsorFeature"> 
+         <div class="sFP"> 
+      <p>SPONSORED FEATURES</p> 
+      </div> 
+         <div class="sFPArrows"> 
+          <div class="circle"> 
+          <p>&ltrif;  </p> 
+    <!----------  <div class="leftArrow"> </div>          ------------> 
+       </div> 
+           <div class="circle"> 
+           <p>&rtrif; </p> 
+    <!----  <div class="rightArrow"> </div>            ----> 
+       </div> 
+          </div> 
+         </div> 
+         <div class="hline" style="width:96%; margin-bottom:10px;"> </div> 
+         <div class="lcs1Thomas"> 
+          <img src="images/wintickets.jpg" alt="WIN Tickets" > 
+          <h5>WIN tickets to the Midtown Big Ideas Exchange event</h5> 
+          <p>Inmidtown in collaboration with The School of Life. designed to inspire and encourage businesses to Interact and learn from each other. share business knowledge and discuss important themes relating to work and life. 
+      </p> 
+      <table> 
+        <tr> 
+         <td>Visit Cuba</td> 
+          <td>WIN</td>   
+          <td>Spread Betting</td> 
+        </tr> 
+        <tr> 
+         <td>London Pride</td> 
+       <td>Vodafone</td>   
+          <td>Claudie Pierlot</td> 
+        </tr> 
+        <tr> 
+           <td>Kooza</td> 
+           <td>Winter Sparkle</td>   
+          </tr> 
+      </table>      
+      </div> 
+       </div> 
+       <div class="promoStory"> 
+         <p class="pSP">PROMOTED STORIES</p> 
+         <div class="hline" style="width:96%; margin-bottom:10px;"> </div> 
+        <div class="pSTopics"> 
+         <div class="pSTopic"> 
+         <img src="images/hidden.jpg" alt="Hidden Secret" /> 
+         <h5>The Hidden Secret in booking...</h5> 
+         <p>(Eat, Drink and Save Money)</p> 
+         </div> 
+         <div class="pSTopic"> 
+         <img src="images/rescuers.jpg" alt="Rescuers" /> 
+         <h5>Rescuers step up search for...</h5> 
+         <p>(Channel News Asia)</p> 
+         </div> 
+         <div class="pSTopic"> 
+         <img src="images/oldboy.jpg" alt="Old Boy" /> 
+         <h5>"Old Boy" director is at it...</h5> 
+         <p>((The New York Times: Paid Post)</p> 
+         </div> 
+         <div class="pSTopic"> 
+         <img src="images/prepare.jpg" alt="Prepare" /> 
+         <h5>How to Prepare for the...</h5> 
+         <p>(Noverties Pharmeceuticals) </p> 
+         </div> 
+         <div class="recommended"> 
+          <img src="images/outbrain.jpg" alt="outbrain" > 
+          <p>Recommended by:</p> 
+         </div> 
+        </div> 
+       </div> 
+       <div class="datelondon"> 
+        <div class="interestForm"> 
+        <div class="formGroup"> 
+        <form> 
+       <label for="gender" class="formLabel">Show Me &nbsp;</label> 
+       <input list="gender" name="gender" placeholder="Gender"> 
+       <datalist id="gender"> 
+         <option value="men"> 
+         <option value="women"> 
+         </datalist> 
+       </input><br /> 
+        
+       <label for="age" class="formLabel">Between:&nbsp;&nbsp;</label> 
+       <input type="number" name="age" placeholder="Age"  style="width:40px" /> 
+        
+       <label for="age" class="formLabel">And &nbsp;</label> 
+       <input type="number" name="age" placeholder="Age" style="width:40px" /> 
+        
+       <button style="float:right; marginright:12px;">Search</button> 
+ 
+       <p>By clicking 'search' you are agree to our <span style="color:blue" >Terms of use</span></p> 
+       
+      </form> 
+       </div> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+   </div> 
+ <div class="footer"> 
+  <p>&copy; Copyright 2014 anumasun. All Rights Reserved. All these contents are Training purpose only. </p> 
+ </div> 
+</body> 
+<script type="text/javascript"> 
+var today = new Date(); 
+document.getElementById('time').innerHTML=today; 
+</script> 
+</html> 
