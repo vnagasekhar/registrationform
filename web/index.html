@@ -5,5 +5,80 @@
 <body>
 <h1> welcome to new index file</h1>
 <h2> this is second message-box</h2>
+<a href="/login" >click here to login</a>
+<p>Steve Klise
+Git Workflow for Beginners
+You’ve used Git and Github a little bit but you’re not comfortable yet with how to use it. In this post I’ll go through a basic work flow for tracking a project with Git and posting to Github.
+
+If you’re reading this post you’ve worked at least once with Git and Github and are still new to working with the Terminal and want to get better. If this is the first thing you’ve ever read about Git, I suggest starting with my Introduction to Git & the Command Line post.
+
+A post about using branches and working with others through Github is coming soon.
+
+When Do I Do What?
+Working with the command line is an acquired sense of comfort. I’ve got my routine practiced and polished but if you’re new to all of this, let’s go through the order of operations.
+
+The commands we are concerned about fall in to four categories:
+
+Do once per project. Commands you only need to do once, when you start tracking a project with Git.
+Do once each time you start working. Every time you open up a new Terminal window you’re back at the starting point and need to make your way to your project.
+Do over and over and over. This is the biggest category, commands you’ll type so often you’ll start mumbling them in your sleep (in a good way).
+Do right before you stand up. Or rather, commands that don’t need to be used as frequently as the previous category yet are still repetitive.
+These aren’t really strict categories, merely one way to mentally organize the steps and commands involved to use Git from the command line.
+
+On beginning a new project
+You’ve just started a new project and you want to track the project with its own Git repository.
+
+Open Terminal (or Git Bash if you’re on Windows) and set the working directory to the project folder using the cd command: $ cd The quickest way to get the path to the folder is to drag and drop the folder into the Terminal window.
+
+Initialize Git in this folder. $ git init
+
+Go to Github.com and create a new repository. Copy the URL for this repository from the setup page into the following command: $ git remote add origin
+
+On resuming work on a project
+You’ve either just restarted your computer or opened a new Terminal window.
+
+Set the Working Directory
+The Terminal has almost certainly restarted in your home directory, the first step is to set the working directory to the project folder using the cd command:
+
+$ cd <PATH_TO_FOLDER>
+Rinse and Repeat
+The next four commands you’ll find yourself repeating over and over. These are the commands required to create a commit. When do you want to make a commit? MAKE A COMMIT EVERY TIME YOU GET SOME PART OF YOUR PROJECT TO WORK BETTER THAN IT DID BEFORE.
+
+The more commits the better. Every commit is a point in time that you can return to at a later date.
+
+git status
+Git doesn’t tell you what’s going on unless you ask. The way to ask is running the above command.
+
+git add <FILE_NAME>
+The result of git status will tell you what files are changed or new to Git. If you want to add these changes to a commit, run git add for each of these files. For instance, if you have changes to files index.html and scripts/application.js and you want to add them for a commit do the following:
+
+$ git add index.html
+$ git add scripts/application.js
+If you are interested in typing less than more
+
+git commit -m "<MESSAGE_FOR_WHAT_YOU_JUST_DID>"
+With the above command we are committing all of the files we’ve just add-ed. Now Git will remember the changes to those files. Inside the quote marks leave a detailed message about what changes are included in this commit. Leaving good messages is very important when you work on projects with other people.
+
+git status
+“But I already did git status,” you’re about to say. And yes you did, but run the command again to verify that your commit worked and the files you added for your commit no longer show any changes.
+
+Whenever you stand up
+Remember, Git is a program on your computer and Github is a website. Up until this point Git has not talked to Github. No code is on Github yet. YOU MUST EXPLICITLY TELL GIT TO SEND FILES AND CHANGES TO GITHUB. THIS DOES NOT HAPPEN AUTOMAGICALLY.
+
+Whenever you reach a point where you’re leaving your computer, push your commits to Github. Then in case anything happens to your computer there’s a backup in the cloud. There’s no reason to push after every commit and when you start working with a group, it’s actually best not to push after every commit. So for now, every time you take a break…or finish a complete feature do the following to send your recent commits to Github:
+
+$ git push origin master
+Why did I say “send your recent commits” and not “upload your repository”? Remember that commits in Git consist only of the changes to the files and not entire copies of the new version of the file. When you run git push only the commits that aren’t already on Github are sent. And those commits consist only of the changes to files and not the entire files. This makes pushing faster but also, that’s pretty cool isn’t it?
+
+Practice, Practice, Practice
+If you want more read Git Further Reading, full of links to great articles and tutorials as well as some tools to enhance your Git experience.
+
+2012/10/07
+Github
+Twitter
+LinkedIn
+Facebook
+sk@sklise.com
+</p>
 </body>
 </html>
